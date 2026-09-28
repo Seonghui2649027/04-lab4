@@ -25,6 +25,11 @@ namespace seonghui2649027
             }
         } 
     public:
+        book (int d = 1, int p = 0 ):id{d}, price{p}
+        {
+            testID();
+            testPrice();
+        }
         void input()
         {
             std::cout << "Enter book id: ";
@@ -41,13 +46,13 @@ namespace seonghui2649027
             price = p; testPrice();
         }
         
-        void print()
+        void print() const 
         {
             std::cout << id << ", " << price << " won\n";
         }   
-        int getID() {return id;}
-        int getPrice() {return price;}    
-    };
+        int getID() const {return id;}
+        int getPrice() const {return price;}    
+    }; 
 }
 // 1. 본인이름학번의 네임스페이스
 // -본인이름학번 네임스페이스 예: 이름이 김프로이고 학번이 1234567일 경우 KimPro1234567
