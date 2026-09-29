@@ -27,8 +27,7 @@ namespace seonghui2649027
     public:
         book (int d = 1, int p = 0 ):id{d}, price{p}
         {
-            testID();
-            testPrice();
+            testID(); testPrice();
         }
         void input()
         {

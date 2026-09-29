@@ -19,8 +19,8 @@ namespace seonghui2649027
             if (available) std::cout<< "available\n"; 
             else std::cout<< "NOT available\n";
         }
-        const book& getBook() const {return b;}
-        void setBook(const book& b0) { b= b0; }
+        const book& getBook() const { return b; }
+        void setBook(const book& b0) { b = b0; }
 
     };
 }
